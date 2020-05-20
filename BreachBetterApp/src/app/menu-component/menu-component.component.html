@@ -1,27 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top menu">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">BreachBetter</a>
+    <a class="navbar-brand" href="#" style="font-weight: 800;">BreachBetter</a>
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          <button class="btn"><a class="nav-link" href="#">🏚 <span class="sr-only">(current)</span></a></button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">S'inscrire</a>
+          <button class="btn"><a class="nav-link" href="#" >S'inscrire</a></button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Tournois</a>
+          <button class="btn"><a class="nav-link" href="#">Tournois</a></button>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            <button class="btn"><a class="nav-link" href="#">Contact</a></button>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Profil</a>
+            <button class="btn" [disabled]="!isAuth"><a class="nav-link" href="#">Profil</a></button>
         </li>
+        
+          
+        
       </ul>
-      
+      <button class="btn btn-success" (click)="onAuth()">Se connecter</button>
     </div>
   </nav>

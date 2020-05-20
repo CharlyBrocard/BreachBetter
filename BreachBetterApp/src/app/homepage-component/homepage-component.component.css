@@ -1,0 +1,22 @@
+.yup:hover{
+    opacity: 0.5;
+    transition: 250ms;
+}
+
+.yup{
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+body{
+    overflow: hidden;
+}
+.footer-copyright{
+    background-color: #efefef;
+}
+
+h6 a,.footer-copyright a{
+    color: #FF4655 !important;
+}

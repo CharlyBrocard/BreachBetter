@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-menu-component',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponentComponent implements OnInit {
 
-  constructor() { }
+
 
   ngOnInit() {
+  }
+
+  isAuth = false;
+  constructor() {
+    setTimeout(() => {
+      this.isAuth = true;
+    }, 4000);
+  }
+  onAuth(){
+    console.log('On se connecte');
   }
 
 }
