@@ -4,12 +4,14 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { SigninComponent } from './signin/signin.component';
 import { AppComponent} from './app.component';
 import { AppviewComponent } from './appview/appview.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
 const routes: Routes = [
   { path: "login-component", component: LoginComponentComponent },
   { path: "signin", component: SigninComponent },
+  { path: "contact", component: ContactComponent},
   { path: '', component: AppviewComponent },
 ];
 

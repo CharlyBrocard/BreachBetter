@@ -1,9 +1,15 @@
 
 
-.menu a:hover{
-    opacity: 0.7;
+.menu li:hover{
+    background-color: #efefef;
+    transition: 250ms;
 }
 
 .menu li{
-    padding: 3%;
+    padding: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+    font-weight: 500;
 }

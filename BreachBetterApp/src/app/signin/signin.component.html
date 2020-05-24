@@ -1,49 +1,62 @@
-<form class="form-horizontal" action='' method="POST">
-    <fieldset>
-      <div id="legend">
-        <legend class="">Register</legend>
-      </div>
-      <div class="control-group">
-        <!-- Username -->
-        <label class="control-label"  for="username">Username</label>
-        <div class="controls">
-          <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-          <p class="help-block">Username can contain any letters or numbers, without spaces</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- E-mail -->
-        <label class="control-label" for="email">E-mail</label>
-        <div class="controls">
-          <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-          <p class="help-block">Please provide your E-mail</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- Password-->
-        <label class="control-label" for="password">Password</label>
-        <div class="controls">
-          <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-          <p class="help-block">Password should be at least 4 characters</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- Password -->
-        <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-        <div class="controls">
-          <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-          <p class="help-block">Please confirm password</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- Button -->
-        <div class="controls">
-          <button class="btn btn-success">Register</button>
-        </div>
-      </div>
-    </fieldset>
+<div class="container">
+<form>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option4" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option5" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option6" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option7" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option8" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option9" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option10" autocomplete="off"> Radio
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Riot ID</label>
+      <input type="id" class="form-control" id="exampleFormControlInput1" placeholder="Rentres ton ID Riot !">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Password</label>
+      <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Choisis le bien !">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Pseudo</label>
+      <input type="pseudo" class="form-control" id="exampleFormControlInput1" placeholder="Ton pseudo !">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+    
+    
   </form>
+</div>

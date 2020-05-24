@@ -13,13 +13,13 @@
           <a class="nav-link" routerLink="/signin">S'inscrire</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tournois</a>
+          <a class="nav-link" routerLink="/tournois">Tournois</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Profil</a>
+            <a class="nav-link" *ngIf="isAuth" routerLink="/profil">Profil</a>
         </li>
         
           
