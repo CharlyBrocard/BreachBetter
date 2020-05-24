@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponentComponent } from './menu-component/menu-component.component';
 import { HomepageComponentComponent } from './homepage-component/homepage-component.component';
+import { LoginComponentComponent } from './login-component/login-component.component';
+import { SigninComponent } from './signin/signin.component';
+import { AppviewComponent } from './appview/appview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponentComponent,
-    HomepageComponentComponent
+    HomepageComponentComponent,
+    LoginComponentComponent,
+    SigninComponent,
+    AppviewComponent
   ],
   imports: [
     BrowserModule,

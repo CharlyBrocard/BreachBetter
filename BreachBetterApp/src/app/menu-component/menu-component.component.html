@@ -7,24 +7,24 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <button class="btn"><a class="nav-link" href="#">🏚 <span class="sr-only">(current)</span></a></button>
+          <a class="nav-link" routerLink="/">🏚 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <button class="btn"><a class="nav-link" href="#" >S'inscrire</a></button>
+          <a class="nav-link" routerLink="/signin">S'inscrire</a>
         </li>
         <li class="nav-item">
-          <button class="btn"><a class="nav-link" href="#">Tournois</a></button>
+          <a class="nav-link" href="#">Tournois</a>
         </li>
         <li class="nav-item">
-            <button class="btn"><a class="nav-link" href="#">Contact</a></button>
+            <a class="nav-link" href="#">Contact</a>
         </li>
         <li class="nav-item">
-            <button class="btn" [disabled]="!isAuth"><a class="nav-link" href="#">Profil</a></button>
+            <a class="nav-link" href="#">Profil</a>
         </li>
         
           
         
       </ul>
-      <button class="btn btn-success" (click)="onAuth()">Se connecter</button>
+      <button class="btn btn-success" (click)="onAuth()" routerLink="/login-component">Se connecter</button>
     </div>
   </nav>
