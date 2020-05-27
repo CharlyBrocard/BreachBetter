@@ -8,9 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponentComponent } from './menu-component/menu-component.component';
 import { HomepageComponentComponent } from './homepage-component/homepage-component.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
-import { SigninComponent } from './signin/signin.component';
 import { AppviewComponent } from './appview/appview.component';
 import { ContactComponent } from './contact/contact.component';
+import { SignupComponent } from './signup/signup.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { ContactComponent } from './contact/contact.component';
     MenuComponentComponent,
     HomepageComponentComponent,
     LoginComponentComponent,
-    SigninComponent,
     AppviewComponent,
-    ContactComponent
+    ContactComponent,
+    SignupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

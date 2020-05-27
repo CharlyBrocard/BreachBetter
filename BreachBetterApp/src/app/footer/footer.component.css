@@ -1,0 +1,7 @@
+.footer-copyright{
+    background-color: #efefef;
+}
+
+h6 a,.footer-copyright a{
+    color: #FF4655 !important;
+}

@@ -1,6 +1,12 @@
+.carousel-caption h5{
+    font-size: 4em;
+    margin-top: calc(86px - 50%);
+    text-shadow: 0 0 2px black;
+}
+
 .yup:hover{
-    opacity: 0.5;
     transition: 250ms;
+    opacity: 0.8;
 }
 
 .yup{
@@ -10,13 +16,27 @@
     padding-right: 0;
 }
 
-body{
-    overflow: hidden;
-}
-.footer-copyright{
-    background-color: #efefef;
+.yup-one span{
+    color: #FF4655;
 }
 
-h6 a,.footer-copyright a{
-    color: #FF4655 !important;
+.yup a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+.yup span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+}
+
+body{
+    overflow: hidden;
 }
