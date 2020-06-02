@@ -9,10 +9,10 @@ import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
-  { path: "login-component", component: LoginComponentComponent },
-  { path: "signup", component: SignupComponent },
-  { path: "contact", component: ContactComponent},
-  { path: '', component: AppviewComponent },
+  { path: "login-component", component: LoginComponentComponent, data: { animationState:'Four' } },
+  { path: "signup", component: SignupComponent, data: { animationState: 'Three' } },
+  { path: "contact", component: ContactComponent, data: { animationState: 'Two' } },
+  { path: '', component: AppviewComponent, data: { animationState: 'One' } },
 ];
 
 @NgModule({
