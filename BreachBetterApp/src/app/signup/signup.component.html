@@ -3,7 +3,7 @@
 <div class="container">
 
     <form [formGroup]="signupForm"  (ngSubmit)="onSubmitSignupForm()">
-        <!--<h2>Étape 1</h2>
+        <h2>Étape 1</h2>
         <h3>Choisis ton personnage principal</h3>
         <hr>
         
@@ -60,12 +60,19 @@
             <img src="../../assets/img/viper-radio-ready.png" alt="viper">
           </label>
 
+          <label>
+            <input type="radio" name="character" value="reyna">
+            <img src="../../assets/img/reyna-radio-ready.png" alt="reyna">
+          </label>
+
         </div>
+        <br><h2>Étape 2</h2>
+        <h3>Saisis tes coordonnées</h3>
         <hr>
         <div class="form-group">
-          <label >Riot ID</label>
-          <input type="id" class="form-control"  placeholder="Rentres ton ID Riot !">
-        </div>-->
+          <label >Moyen de vérifier compte Riot Games / requete API</label>
+          <input type="id" class="form-control"  placeholder="Quelque chose">
+        </div>
     
         <div class="form-group">
           <label >Email</label>
@@ -77,11 +84,21 @@
           <input type="password" class="form-control"  placeholder="Minimum 6 caractères" formControlName="password">
         </div>
     
-        <!--<div class="form-group">
+        <div class="form-group">
           <label >Pseudo</label>
           <input type="pseudo" class="form-control"  placeholder="Ton pseudo !">
-        </div>-->
-    
+        </div>
+        
+        <div class="row"  *ngIf="showMsg">
+          <div class="col-xs-12">
+            <p class="alert alert-success">
+                <strong>Inscription réussite ! Redirection dans 3 secondes.</strong>
+
+            </p>
+          </div>
+        </div>
+        
+
         <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">Inscription</button>
         
         

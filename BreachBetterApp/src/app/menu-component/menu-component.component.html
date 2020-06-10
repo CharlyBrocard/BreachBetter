@@ -2,7 +2,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" routerLink="/" style="font-weight: 800;">BreachBetter</a>
+    <a class="navbar-brand" routerLink="/" style="font-weight: 800;">BreachBetter.gg</a>
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -25,6 +25,6 @@
           
         
       </ul>
-      <button class="btn btn-success" (click)="onAuth()" routerLink="/login-component">Se connecter</button>
+      <button class="btn btn-success" *ngIf="!isAuth" routerLink="/login-component">Se connecter</button>
     </div>
   </nav>

@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { from } from 'rxjs';
+import { TournoiComponent } from './tournoi/tournoi.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { from } from 'rxjs';
     AppviewComponent,
     ContactComponent,
     SignupComponent,
-    FooterComponent
+    FooterComponent,
+    TournoiComponent
   ],
   imports: [
     BrowserModule,

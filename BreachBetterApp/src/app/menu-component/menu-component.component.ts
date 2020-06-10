@@ -13,14 +13,5 @@ export class MenuComponentComponent implements OnInit {
   ngOnInit() {
   }
 
-  isAuth = false;
-  constructor() {
-    setTimeout(() => {
-      this.isAuth = true;
-    }, 4000);
-  }
-  onAuth(){
-    console.log('On se connecte');
-  }
-
+  constructor() {}
 }
