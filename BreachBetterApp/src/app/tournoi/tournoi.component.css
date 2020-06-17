@@ -1,0 +1,51 @@
+
+.banner-title{
+   
+    text-align: center;
+    height: 450px;
+    background-image: url("../../assets/img/banner6.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-family: 'valorant', 'arial', sans-serif;
+}
+
+.btn-col{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-please{
+    padding: 20px 20px;
+
+}
+
+
+.btn-please{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ff4654;
+    border-color: #ff4654;
+}
+
+.btn-please:hover{
+    color:#ff4654;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-color: #ff4654;
+}

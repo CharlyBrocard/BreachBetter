@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { routeTransitionAnimations } from './route-transition-animations';
 import * as firebase from 'firebase';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',

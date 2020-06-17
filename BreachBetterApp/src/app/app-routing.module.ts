@@ -6,12 +6,14 @@ import { TournoiComponent } from './tournoi/tournoi.component';
 import { AppComponent} from './app.component';
 import { AppviewComponent } from './appview/appview.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProfilComponent } from './profil/profil.component';
 
 
 
 const routes: Routes = [
-  { path: "tournoi", component: TournoiComponent, data: { animationState:'Five' } },
-  { path: "login-component", component: LoginComponentComponent, data: { animationState:'Four' } },
+  { path: "profil", component: ProfilComponent, data: { animationState: 'Six' } },
+  { path: "tournoi", component: TournoiComponent, data: { animationState: 'Five' } },
+  { path: "login-component", component: LoginComponentComponent, data: { animationState: 'Four' } },
   { path: "signup", component: SignupComponent, data: { animationState: 'Three' } },
   { path: "contact", component: ContactComponent, data: { animationState: 'Two' } },
   { path: '', component: AppviewComponent, data: { animationState: 'One' } },

@@ -52,8 +52,8 @@ form hr{
   [type=radio] + img {
     cursor: pointer;
     opacity: 0.5;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 
   [type=radio] + img:hover{

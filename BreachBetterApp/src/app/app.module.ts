@@ -14,6 +14,8 @@ import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { from } from 'rxjs';
 import { TournoiComponent } from './tournoi/tournoi.component';
+import { ProfilComponent } from './profil/profil.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { TournoiComponent } from './tournoi/tournoi.component';
     ContactComponent,
     SignupComponent,
     FooterComponent,
-    TournoiComponent
+    TournoiComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
