@@ -16,6 +16,8 @@ import { from } from 'rxjs';
 import { TournoiComponent } from './tournoi/tournoi.component';
 import { ProfilComponent } from './profil/profil.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthenticationService } from './services/authentication.service';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -36,9 +38,12 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    AuthenticationService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
