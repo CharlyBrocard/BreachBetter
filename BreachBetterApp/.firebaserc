@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "breachbetter": {
+      "hosting": {
+        "BreachBetterApp": [
+          "breachbetter"
+        ]
+      }
+    }
+  }
+}

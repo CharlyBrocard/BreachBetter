@@ -7,6 +7,8 @@ import { AppComponent} from './app.component';
 import { AppviewComponent } from './appview/appview.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfilComponent } from './profil/profil.component';
+import { AuthGuardService } from './services/auth-guard.service';
+import { from } from 'rxjs';
 
 
 
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: "signup", component: SignupComponent, data: { animationState: 'Three' } },
   { path: "contact", component: ContactComponent, data: { animationState: 'Two' } },
   { path: '', component: AppviewComponent, data: { animationState: 'One' } },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

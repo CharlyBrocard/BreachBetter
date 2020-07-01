@@ -14,6 +14,7 @@ import { error } from 'util';
 export class LoginComponentComponent implements OnInit {
 
   signinForm: FormGroup;
+  errorMessage: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -32,7 +33,7 @@ export class LoginComponentComponent implements OnInit {
     });
   }
 
-  isAuth: boolean = false;
+
 
   onSubmitSigninForm(){
   
@@ -42,13 +43,12 @@ export class LoginComponentComponent implements OnInit {
       (data) => {
         console.log(data);
         this.router.navigate(['/']);
-        this.isAuth = true;
+
       }
     ).catch(
       (error) => {
         console.log(error);
-        this.isAuth = false;
-        
+        this.errorMessage = error;
       }
     );
   }

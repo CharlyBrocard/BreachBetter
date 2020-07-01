@@ -40,7 +40,7 @@ export class SignupComponent implements OnInit {
       () => {
         this.showMsg = true;
         setTimeout(() => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/login-component']);
       }, 3000);
       }
     ).catch(
