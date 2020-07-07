@@ -16,17 +16,83 @@
         
       </div>
       <div class="right col-lg-8">
+
         <ul class="nav">
-          <li>Historique</li>
           <li>Mon compte</li>
+        </ul>
+
+        <div class="row gallery">
+          <form class="style-form" >
+            
+            <div class="form-group">
+              <label >Mot de passe</label>
+              <input type="password" class="form-control" placeholder="🔒 Mot de passe">
+            </div>
+            </form>
+          
+        </div>
+
+        <ul class="nav">
+          <li>Historique test</li>
+          
         </ul>
         
         <div class="row gallery">
           <div class="col-md-12">
-             <img src="https://cdn.mobalytics.gg/stable/search-page/matches.png"/>
+              <!-- <table class="table table-bordered">
+                  <thead>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr *ngFor="let user of users">
+
+                      <td>{{user.id}}</td>
+                      <td>{{user.name}}</td>
+                      <td>{{user.username}}</td>
+                      <td>{{user.email}}</td>
+
+                    </tr>
+
+                  </tbody>
+
+              </table> -->
+
+              <table class="table table-bordered">
+                <thead>
+                  <th>id</th>
+                  <th>Name</th>
+                  <th>Version</th>
+                  <th>Truc</th>
+
+                </thead>
+
+                <tbody>
+
+                  <tr *ngFor="let champion of champions">
+                    <td>{{champion.type}}</td>
+                    <td>{{champion.sprite}}</td>
+                    <td>{{champion.id}}</td>
+                    <td>{{champion.name}}</td>
+
+                  </tr>
+
+                </tbody>
+
+            </table>
+
+          
+
+
           </div>
           
         </div>
+
       </div>
       </div>
   
