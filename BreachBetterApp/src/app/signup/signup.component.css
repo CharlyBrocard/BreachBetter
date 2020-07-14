@@ -66,3 +66,29 @@ form hr{
       opacity: 1;
       transition: all .2s ease-in-out;
   }
+
+
+  @media screen and (max-width: 425px) {
+    .banner-title h1{
+        font-size: 2.5rem;
+        top: 20%;
+    }
+
+    .banner-title{
+        height: 200px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .banner-title h1{
+        top:25%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1300px){
+    .banner-title h1{
+        top:20%;
+    }
+  }
+
+  
