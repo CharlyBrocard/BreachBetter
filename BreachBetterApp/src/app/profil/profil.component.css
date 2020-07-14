@@ -2,7 +2,7 @@ html,body {
     background: #efefef;
   }
   
-  /* .container {
+   /* .container-fluid {
     max-width: 1250px;
     margin: 30px auto 30px;
     padding: 0 !important;
@@ -19,35 +19,17 @@ html,body {
     background-size: cover;
     background-color: red;
     height: 250px;
+    width: 100%;
   }
-  
-  header i {
-    position: relative;
-    cursor: pointer;
-    right: -96%;
-    top: 25px;
-    font-size: 18px !important;
-    color: #fff;
-  }
-  
-  /* @media (max-width:800px) {
-    header {
-      height: 150px;
-    } 
-    
-    header i {
-      right: -90%;
-    }
-  } */
-  
 
-  
+
   .left {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
+
   
   .photo {
     width: 200px;
@@ -72,32 +54,24 @@ html,body {
     font-size: 14pt;
     color: #aaa;
   }
-  
-  
-  .desc {
-    text-align: center;
-    margin-top: 25px;
-    margin: 25px 40px;
-    color: #999;
-    font-size: 11pt;
-    font-family: "Open Sans";
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ededed;
-  }
 
-  
   .right {
     padding: 0 25px 0 25px !important;
   }
+
+  @media screen and (min-width:1024px){
+  .right input{
+    width: 500px;
+  }
+}
   
   .nav {
     display: inline-flex;
   }
   
   .nav li {
-    margin: 40px 30px 0 10px;
-    cursor: pointer;
-    font-size: 13pt;
+    margin: 40px 30px 0 0px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -122,9 +96,9 @@ html,body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 768px) {
-  .photo {
-    margin-top: -5rem;
+  @media screen and (min-width: 768px) and (max-width: 768px) {
+    .photo {
+      margin-top: -5rem;
 }
 }
 

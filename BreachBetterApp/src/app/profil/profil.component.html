@@ -1,99 +1,97 @@
 <div class="container-fluid">
-  <header>
-    
-  </header>
+  <div class="row">
+    <header>
+      
+    </header>
   
-    <div class="row">
-      <div class="left col-lg-4 col-sm-12 col-md-12">
-        <div class="photo-left">
-          <img class="photo" src="https://cdnb.artstation.com/p/assets/images/images/012/033/999/large/thomas-randby-npe-ahri.jpg?1532668669"/>
-          
-        </div>
-        <h4 class="name">userID</h4>
-        <p class="info">Main champion <img src="http://ddragon.leagueoflegends.com/cdn/10.12.1/img/champion/Aatrox.png" alt=""></p>
-        <p class="info">Gold 2 <img src="../../assets/img/Emblem_Gold.png" alt=""/></p>
-
-        
-      </div>
-      <div class="right col-lg-8 col-sm-12 col-md-12">
-
-        <ul class="nav">
-          <li>Mon compte</li>
-        </ul>
-
-        <div class="row gallery">
-          <form class="style-form" >
+    
+        <div class="left col-lg-4 col-sm-12 col-md-8">
+          <div class="photo-left">
+            <img class="photo" src="https://cdnb.artstation.com/p/assets/images/images/012/033/999/large/thomas-randby-npe-ahri.jpg?1532668669"/>
             
-            <div class="form-group">
-              <label >Mot de passe</label>
-              <input type="password" class="form-control" placeholder="🔒 Mot de passe">
-            </div>
-            </form>
-          
-        </div>
-
-        <ul class="nav">
-          <li>Historique test</li>
-          
-        </ul>
-        
-        <div class="row gallery">
-          <div class="col-md-12 col-sm-12">
-               <table class="table table-bordered">
-                  <thead>
-                    <th>id</th>
-                    <th>Name</th>
-                    <th>Username</th>
-                    <th>Email</th>
-
-                  </thead>
-
-                  <tbody>
-
-                    <tr *ngFor="let user of users">
-
-                      <td>{{user.id}}</td>
-                      <td>{{user.name}}</td>
-                      <td>{{user.username}}</td>
-                      <td>{{user.email}}</td>
-
-                    </tr>
-
-                  </tbody>
-
-              </table>
-
-              <!-- <table class="table table-bordered">
-                <thead>
-                  <th>id</th>
-                  <th>Name</th>
-                  <th>Version</th>
-                  <th>Other</th>
-
-                </thead>
-
-                <tbody>
-
-                  <tr *ngFor="let champion of champions">
-                    <td>{{champion.type}}</td>
-                    <td>{{champion.sprite}}</td>
-                    <td>{{champion.id}}</td>
-                    <td>{{champion.name}}</td>
-
-                  </tr>
-
-                </tbody>
-
-            </table> -->
-
-          
-
-
           </div>
+          <h4 class="name">userID</h4>
+          <p class="info">Main champion <img src="http://ddragon.leagueoflegends.com/cdn/10.12.1/img/champion/Aatrox.png" alt=""></p>
+          <p class="info">Gold 2 <img src="../../assets/img/Emblem_Gold.png" alt=""/></p>
+
           
         </div>
+        
+        <div class="right col-lg-8 col-sm-12 col-md-8">
 
-      </div>
-      </div>
+              <ul class="nav">
+                <li>Mon compte</li>
+              </ul>
+
+            
+              <form class="style-form" >
+                
+                <div class="form-group">
+                  <label >Changer mon mot de passe</label>
+                  <input type="password" class="form-control" placeholder="🔒 Mot de passe actuel">
+                  <br>
+                  <input type="password" class="form-control" placeholder="🔒 Nouveau mot de passe">
+                  <br>
+                  <button type="submit" class="btn btn-primary" >Envoyer</button>
+                </div>
+              </form>
+              
+            
+
+              <ul class="nav">
+                <li>Historique test</li>
+                
+              </ul>
+              
+              
+                    <table class="table table-bordered">
+                        <thead>
+                          <th>id</th>
+                          <th>Name</th>
+                          <th>Username</th>
+                          <th>Email</th>
+
+                        </thead>
+
+                        <tbody>
+
+                          <tr *ngFor="let user of users">
+
+                            <td>{{user.id}}</td>
+                            <td>{{user.name}}</td>
+                            <td>{{user.username}}</td>
+                            <td>{{user.email}}</td>
+
+                          </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <!-- <table class="table table-bordered">
+                      <thead>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Version</th>
+                        <th>Other</th>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr *ngFor="let champion of champions">
+                          <td>{{champion.type}}</td>
+                          <td>{{champion.sprite}}</td>
+                          <td>{{champion.id}}</td>
+                          <td>{{champion.name}}</td>
+
+                        </tr>
+
+                      </tbody>
+
+                  </table> -->
+
+        </div>
+  </div>
   
 </div>
