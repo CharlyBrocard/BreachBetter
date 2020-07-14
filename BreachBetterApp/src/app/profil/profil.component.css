@@ -2,14 +2,14 @@ html,body {
     background: #efefef;
   }
   
-  .container {
+  /* .container {
     max-width: 1250px;
     margin: 30px auto 30px;
     padding: 0 !important;
     width: 90%;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
-  }
+  } */
   
   header {
     background: #eee;
@@ -30,7 +30,7 @@ html,body {
     color: #fff;
   }
   
-  @media (max-width:800px) {
+  /* @media (max-width:800px) {
     header {
       height: 150px;
     } 
@@ -38,7 +38,7 @@ html,body {
     header i {
       right: -90%;
     }
-  }
+  } */
   
 
   
@@ -104,18 +104,6 @@ html,body {
     color: #888;
   }
   
-  .nav li:hover, .nav li:nth-child(1)  { 
-    color: #999;
-    border-bottom: 2px solid #999;
-  }
-  
-  
-  
-  @media (max-width:990px) {
-    .nav {
-      display: none;
-    }
-  }
   .gallery  {
     margin-top: 35px;
   }
@@ -123,15 +111,29 @@ html,body {
   .gallery div {
     margin-bottom: 30px;
   }
-  
-  .gallery img {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
-    width: auto; 
-    height: auto;
-    cursor: pointer;
-    max-width: 100%;
-  }
 
   .info img{
       width: 100px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    .photo {
+      margin-top: -40rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .photo {
+    margin-top: -5rem;
+}
+}
+
+  @media screen and (max-width: 425px){
+    .photo{
+      width: 100px;
+      height: 100px;
+      margin-top: -3rem;
+      border: 3px solid #fff;
+    }
+
   }
